@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matemáticas en la Educación Superior</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Matemáticas en la Educación Superior</h1>
+  <nav>
+     <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="autora.html">Sobre la Autora</a></li>
+        <li><a href="numeros.html">Números Racionales e Irracionales</a></li>
+        <li><a href="algebra.html">Álgebra Lineal</a></li>
+        <li><a href="funciones.html">Funciones Exponenciales y Logarítmicas</a></li>
+     </ul>
+  </nav>
+  </header>
+
+  <main>
+     <section> 
+    <h2>Bienvenido</h2>
+    <p>Este sitio web está dedicado a explorar los aspectos clave de la asignatura de Matemáticas en la educación superior. Se abordan contenidos fundamentales como los números racionales e irracionales, el álgebra lineal, y las funciones exponenciales y logarítmicas. Es un recurso pensado para estudiantes y docentes interesados en fortalecer su comprensión matemática.</p>
+   </section>
+</main>
+ 
+  <footer>
+      <p id="fecha-hora"></p>
+</footer>
+ 
+  <script>
+    function actualizarFechaHora() {
+      const ahora = new Date();
+      const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const fecha = ahora.toLocaleDateString('es-EC', opciones);
+      const hora = ahora.toLocaleTimeString('es-EC');
+      document.getElementById("fecha-hora").innerHTML = `Fecha: ${fecha} | Hora: ${hora}`;
+    }
+    setInterval(actualizarFechaHora, 1000);
+    actualizarFechaHora();
+</script>
+</body>
+</html>

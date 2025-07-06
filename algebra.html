@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+  <title>Álgebra Lineal</title>
+ <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+  <h1>Álgebra Lineal</h1>
+  <nav>
+     <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="autora.html">Sobre la Autora</a></li>
+        <li><a href="numeros.html">Números Racionales e Irracionales</a></li>
+        <li><a href="algebra.html">Álgebra Lineal</a></li>
+        <li><a href="funciones.html">Funciones Exponenciales y Logarítmicas</a></li>
+     </ul>
+  </nav>
+  </header>
+
+  <main>
+<section>
+    <h2>¿Qué es el Álgebra Lineal?</h2>
+    <p>El álgebra lineal es una rama de las matemáticas que estudia los vectores, matrices y sistemas de ecuaciones lineales. Es fundamental para resolver problemas en ingeniería, física, computación y economía.</p>
+    <h3>Temas Principales</h3>
+    <ul>
+      <li>Vectores y espacios vectoriales</li>
+      <li>Operaciones con matrices</li>
+      <li>Determinantes</li>
+      <li>Sistemas de ecuaciones lineales</li>
+    </ul>
+    </section>
+</main>
+ <footer><p id="fecha-hora"></p></footer>
+ 
+  <script>
+    function actualizarFechaHora() {
+      const ahora = new Date();
+      const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const fecha = ahora.toLocaleDateString('es-EC', opciones);
+      const hora = ahora.toLocaleTimeString('es-EC');
+      document.getElementById("fecha-hora").innerHTML = `Fecha: ${fecha} | Hora: ${hora}`;
+    }
+    setInterval(actualizarFechaHora, 1000);
+    actualizarFechaHora();
+</script>
+</body>
+</html>

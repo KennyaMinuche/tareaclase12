@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+  <title>Sobre la Autora</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Sobre la Autora</h1>
+    <nav>
+     <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="autora.html">Sobre la Autora</a></li>
+        <li><a href="numeros.html">Números Racionales e Irracionales</a></li>
+        <li><a href="algebra.html">Álgebra Lineal</a></li>
+        <li><a href="funciones.html">Funciones Exponenciales y Logarítmicas</a></li>
+     </ul>
+  </nav>
+  </header>
+
+  <main>
+    <section>
+    <h2>Kennya Minuche</h2>
+    <p>Soy estudiante de la carrera de Pedagogía en Informática en la Universidad Técnica de Machala (UTMACH). Este sitio web ha sido desarrollado como parte de un proyecto educativo que busca integrar la tecnología con la enseñanza de la matemática en la educación superior.</p>
+    <p>Como futura docente, considero que la matemática no solo es una ciencia exacta, sino también una herramienta fundamental para el pensamiento lógico y crítico. A través de este sitio, comparto conceptos claves de manera clara, estructurada y amigable.</p>
+    <p>Agradezco el apoyo de mis profesores y el uso de herramientas tecnológicas que han hecho posible este proyecto.</p>
+  </section>
+</main>
+  </section>
+</main>
+ 
+  <footer><p id="fecha-hora"></p></footer>
+ 
+  <script>
+    function actualizarFechaHora() {
+      const ahora = new Date();
+      const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const fecha = ahora.toLocaleDateString('es-EC', opciones);
+      const hora = ahora.toLocaleTimeString('es-EC');
+      document.getElementById("fecha-hora").innerHTML = `Fecha: ${fecha} | Hora: ${hora}`;
+    }
+    setInterval(actualizarFechaHora, 1000);
+    actualizarFechaHora();
+</script>
+</body>
+</html>
+

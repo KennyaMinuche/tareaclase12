@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+  <title>Números Racionales e Irracionales</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Números Racionales e Irracionales</h1>
+   <nav>
+     <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="autora.html">Sobre la Autora</a></li>
+        <li><a href="numeros.html">Números Racionales e Irracionales</a></li>
+        <li><a href="algebra.html">Álgebra Lineal</a></li>
+        <li><a href="funciones.html">Funciones Exponenciales y Logarítmicas</a></li>
+     </ul>
+  </nav>
+  </header>
+
+  <main>
+    <selection>
+       <h2>Definiciones</h2>
+    <p>Los números racionales son aquellos que pueden expresarse como el cociente de dos enteros, con denominador distinto de cero. Los números irracionales no pueden representarse como fracción; su expresión decimal es infinita y no periódica.</p>
+     <h3>Ejemplos</h3>
+    <ul>
+      <li>Números racionales: 1/2, 3, -4, 0.75</li>
+      <li>Números irracionales: π, √2, e</li>
+    </ul>
+   </section>
+  </main>
+
+   <footer><p id="fecha-hora"></p></footer>
+ 
+  <script>
+    function actualizarFechaHora() {
+      const ahora = new Date();
+      const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const fecha = ahora.toLocaleDateString('es-EC', opciones);
+      const hora = ahora.toLocaleTimeString('es-EC');
+      document.getElementById("fecha-hora").innerHTML = `Fecha: ${fecha} | Hora: ${hora}`;
+    }
+    setInterval(actualizarFechaHora, 1000);
+    actualizarFechaHora();
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+  <title>Funciones Exponenciales y Logarítmicas</title>
+ <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+  <h1>Funciones Exponenciales y Logarítmicas</h1>
+  <nav>
+     <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="autora.html">Sobre la Autora</a></li>
+        <li><a href="numeros.html">Números Racionales e Irracionales</a></li>
+        <li><a href="algebra.html">Álgebra Lineal</a></li>
+        <li><a href="funciones.html">Funciones Exponenciales y Logarítmicas</a></li>
+     </ul>
+  </nav>
+  </header>
+
+  <main>
+    <section>
+    <h2>Concepto</h2>
+    <p>Las funciones exponenciales tienen la forma general f(x) = a^x, donde a es una constante positiva distinta de 1. Estas funciones modelan crecimiento o decaimiento acelerado.</p>
+    <p>Las funciones logarítmicas son la inversa de las exponenciales. Se expresan como f(x) = log a (x) y son útiles en situaciones donde se quiere conocer el tiempo o la cantidad de ciclos necesarios para alcanzar cierto valor.</p>
+    <h3>Aplicaciones</h3>
+    <ul>
+      <li>Crecimiento poblacional</li>
+      <li>Procesos radiactivos</li>
+      <li>Interés compuesto</li>
+      <li>Escalas logarítmicas como la de Richter</li>
+    </ul>
+    </section>
+</main>
+ <footer><p id="fecha-hora"></p></footer>
+ 
+  <script>
+    function actualizarFechaHora() {
+      const ahora = new Date();
+      const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const fecha = ahora.toLocaleDateString('es-EC', opciones);
+      const hora = ahora.toLocaleTimeString('es-EC');
+      document.getElementById("fecha-hora").innerHTML = `Fecha: ${fecha} | Hora: ${hora}`;
+    }
+    setInterval(actualizarFechaHora, 1000);
+    actualizarFechaHora();
+</script>
+</body>
+</html>
